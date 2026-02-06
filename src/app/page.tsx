@@ -141,21 +141,19 @@ export default function DoseLanding() {
                   <span className="text-lg">You&apos;re on the list. We&apos;ll email you when we launch.</span>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 items-start">
-                  <div className="relative">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
-                      required
-                      className="px-6 py-4 bg-[#2a2f26] border border-white/10 rounded-full text-base text-[#FAF8F5] placeholder-[#A4B494]/50 focus:outline-none focus:border-[#8B9E82] w-full sm:w-72"
-                    />
-                  </div>
+                <form onSubmit={handleSubmit} className="flex flex-row gap-2 items-center">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    required
+                    className="flex-1 min-w-0 px-4 py-3 sm:px-6 sm:py-4 bg-[#2a2f26] border border-white/10 rounded-full text-sm sm:text-base text-[#FAF8F5] placeholder-[#A4B494]/50 focus:outline-none focus:border-[#8B9E82]"
+                  />
                   <button 
                     type="submit"
                     disabled={status === "loading"}
-                    className="px-8 py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-base font-medium hover:bg-[#A4B494] transition-colors disabled:opacity-50"
+                    className="px-4 py-3 sm:px-8 sm:py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-sm sm:text-base font-medium hover:bg-[#A4B494] transition-colors disabled:opacity-50 whitespace-nowrap"
                   >
                     {status === "loading" ? "..." : "Notify Me"}
                   </button>
