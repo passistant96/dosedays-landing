@@ -40,10 +40,10 @@ export default function DoseLanding() {
             {/* CTA */}
             <div className="hidden md:flex items-center gap-4">
               <a 
-                href="https://apps.apple.com/app/dose" 
+                href="mailto:info@dosedays.me?subject=Notify%20me%20when%20Dose%20launches" 
                 className="text-sm px-6 py-2.5 bg-[#8B9E82] text-[#1a1f16] rounded-full hover:bg-[#A4B494] transition-colors font-medium"
               >
-                Download
+                Get Notified
               </a>
             </div>
 
@@ -83,7 +83,7 @@ export default function DoseLanding() {
             <div>
               {/* Eyebrow */}
               <p className="text-sm tracking-[0.2em] uppercase text-[#8B9E82] mb-6">
-                Now on iOS
+                Coming Soon to iOS
               </p>
 
               {/* Main headline */}
@@ -101,13 +101,13 @@ export default function DoseLanding() {
               {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-4 items-start">
                 <a 
-                  href="https://apps.apple.com/app/dose"
+                  href="mailto:info@dosedays.me?subject=Notify%20me%20when%20Dose%20launches"
                   className="px-8 py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-base font-medium hover:bg-[#A4B494] transition-colors inline-flex items-center gap-2"
                 >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                   </svg>
-                  Download for iOS
+                  Get Notified
                 </a>
                 <a 
                   href="#features"
@@ -390,18 +390,18 @@ export default function DoseLanding() {
             <span className="italic text-[#A4B494]">your rhythm?</span>
           </h2>
           <p className="text-xl text-[#A4B494] mb-12 max-w-2xl mx-auto">
-            Download Dose and start tracking today. Free to use, premium features when you&apos;re ready.
+            Be the first to know when Dose launches. Free to use, premium features when you&apos;re ready.
           </p>
           <a 
-            href="https://apps.apple.com/app/dose"
+            href="mailto:info@dosedays.me?subject=Notify%20me%20when%20Dose%20launches"
             className="inline-flex items-center gap-2 px-10 py-5 bg-[#8B9E82] text-[#1a1f16] rounded-full text-lg font-medium hover:bg-[#A4B494] transition-colors"
           >
-            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
             </svg>
-            Download for iOS
+            Get Notified
           </a>
-          <p className="text-sm text-[#A4B494]/60 mt-6">Free to download. Premium optional.</p>
+          <p className="text-sm text-[#A4B494]/60 mt-6">Launching soon on iOS.</p>
         </div>
       </section>
 
