@@ -76,43 +76,62 @@ export default function DoseLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-6 relative">
+      <section className="pt-32 pb-24 px-6 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-4xl">
-            {/* Eyebrow */}
-            <p className="text-sm tracking-[0.2em] uppercase text-[#8B9E82] mb-6">
-              Now on iOS
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left: Text Content */}
+            <div>
+              {/* Eyebrow */}
+              <p className="text-sm tracking-[0.2em] uppercase text-[#8B9E82] mb-6">
+                Now on iOS
+              </p>
 
-            {/* Main headline */}
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal leading-[1.1] mb-8 tracking-tight">
-              Track your rhythm,{" "}
-              <span className="italic text-[#A4B494]">not just your doses</span>
-            </h1>
+              {/* Main headline */}
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-normal leading-[1.1] mb-8 tracking-tight">
+                Track your rhythm,{" "}
+                <span className="italic text-[#A4B494]">not just your doses</span>
+              </h1>
 
-            {/* Subheadline */}
-            <p className="text-xl md:text-2xl text-[#A4B494] leading-relaxed max-w-2xl mb-12 font-light">
-              The first microdosing companion that understands integration days. 
-              Log doses, reflections, and moods. See patterns emerge over time.
-            </p>
+              {/* Subheadline */}
+              <p className="text-xl md:text-2xl text-[#A4B494] leading-relaxed max-w-xl mb-12 font-light">
+                The first microdosing companion that understands integration days. 
+                Log doses, reflections, and moods. See patterns emerge over time.
+              </p>
 
-            {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-4 items-start">
-              <a 
-                href="https://apps.apple.com/app/dose"
-                className="px-8 py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-base font-medium hover:bg-[#A4B494] transition-colors inline-flex items-center gap-2"
-              >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                </svg>
-                Download for iOS
-              </a>
-              <a 
-                href="#features"
-                className="px-8 py-4 text-[#FAF8F5] border border-white/20 rounded-full text-base font-medium hover:border-[#8B9E82] transition-colors"
-              >
-                Learn more
-              </a>
+              {/* CTA */}
+              <div className="flex flex-col sm:flex-row gap-4 items-start">
+                <a 
+                  href="https://apps.apple.com/app/dose"
+                  className="px-8 py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-base font-medium hover:bg-[#A4B494] transition-colors inline-flex items-center gap-2"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                  </svg>
+                  Download for iOS
+                </a>
+                <a 
+                  href="#features"
+                  className="px-8 py-4 text-[#FAF8F5] border border-white/20 rounded-full text-base font-medium hover:border-[#8B9E82] transition-colors"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Phone Mockup */}
+            <div className="hidden md:flex justify-center">
+              <div className="relative">
+                <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-black/30 border border-white/10">
+                  <Image
+                    src="/screenshots/home.png"
+                    alt="Dose app home screen"
+                    width={280}
+                    height={607}
+                    className="w-[280px] h-auto"
+                    priority
+                  />
+                </div>
+              </div>
             </div>
           </div>
 
