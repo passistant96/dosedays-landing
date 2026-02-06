@@ -269,6 +269,11 @@ export default function DoseLanding() {
                 detail: "Deep insights",
               },
               {
+                title: "Voice Notes",
+                description: "Capture thoughts without typing. Hold to record, tap to play back anytime.",
+                detail: "Hands-free",
+              },
+              {
                 title: "Built-in Knowledge",
                 description: "Curated articles on protocols, science, and integration. Learn at your own pace.",
                 detail: "Library included",
