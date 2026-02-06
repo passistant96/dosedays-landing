@@ -16,7 +16,7 @@ export default function DoseLanding() {
             {/* Logo */}
             <Link href="/" className="block">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="Dose"
                 width={80}
                 height={32}
@@ -402,7 +402,7 @@ export default function DoseLanding() {
             <div>
               <a href="/" className="mb-4 block">
                 <Image
-                  src="/logo.png"
+                  src="/logo.svg"
                   alt="Dose"
                   width={80}
                   height={32}
