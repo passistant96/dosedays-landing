@@ -419,7 +419,7 @@ export default function DoseLanding() {
                 </li>
               </ul>
               <a href="mailto:info@dosedays.me" className="text-[#1a1f16] font-medium hover:text-[#1a1f16]/70 transition-colors">
-                Send us feedback →
+                Get in touch →
               </a>
             </div>
           </div>
