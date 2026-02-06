@@ -358,14 +358,14 @@ export default function DoseLanding() {
             <div className="space-y-2">
               <div className="overflow-hidden rounded-[2rem]">
                 <Image
-                  src="/screenshots/settings.png"
-                  alt="Settings screen"
+                  src="/screenshots/journal.png"
+                  alt="Journal screen"
                   width={280}
                   height={607}
                   className="w-full h-auto"
                 />
               </div>
-              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Your Data</p>
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Journal</p>
             </div>
           </div>
         </div>
