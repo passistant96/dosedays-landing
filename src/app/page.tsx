@@ -137,20 +137,15 @@ export default function DoseLanding() {
 
           {/* Stats bar */}
           <div className="mt-16 flex justify-center">
-            <div className="flex gap-8 bg-[#2a2f26] px-8 py-4 rounded-full shadow-lg border border-white/10">
+            <div className="flex gap-6 md:gap-8 bg-[#2a2f26] px-6 md:px-8 py-4 rounded-full shadow-lg border border-white/10">
               <div className="text-center">
-                <div className="text-2xl font-medium text-[#8B9E82]">100%</div>
+                <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">100%</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Private</div>
               </div>
               <div className="w-px bg-white/10" />
               <div className="text-center">
-                <div className="text-2xl font-medium text-[#8B9E82]">v1.0</div>
+                <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">v1.0</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Launch</div>
-              </div>
-              <div className="w-px bg-white/10" />
-              <div className="text-center">
-                <div className="text-2xl font-medium text-[#8B9E82]">Free</div>
-                <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">To Start</div>
               </div>
             </div>
           </div>
@@ -178,7 +173,7 @@ export default function DoseLanding() {
                 across your entire rhythm and see what actually works for you.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 { number: "01", title: "Track", desc: "Log doses in seconds" },
                 { number: "02", title: "Reflect", desc: "Capture thoughts daily" },
@@ -369,10 +364,6 @@ export default function DoseLanding() {
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
                   Health data correlations (sleep, HRV)
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
-                  Custom protocol builder
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
