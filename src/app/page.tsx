@@ -74,7 +74,7 @@ export default function DoseLanding() {
             {/* CTA */}
             <div className="hidden md:flex items-center gap-4">
               <a 
-                href="mailto:info@dosedays.me?subject=Notify%20me%20when%20Dose%20launches" 
+                href="#signup" 
                 className="text-sm px-6 py-2.5 bg-[#8B9E82] text-[#1a1f16] rounded-full hover:bg-[#A4B494] transition-colors font-medium"
               >
                 Get Notified
@@ -110,7 +110,7 @@ export default function DoseLanding() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-6 relative overflow-hidden">
+      <section id="signup" className="pt-32 pb-24 px-6 relative overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left: Text Content */}
