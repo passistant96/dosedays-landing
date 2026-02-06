@@ -285,7 +285,7 @@ export default function DoseLanding() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-sm text-[#1a1f16]/60 text-center">Log Dose</p>
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Log Dose</p>
             </div>
             <div className="space-y-2">
               <div className="overflow-hidden rounded-[2rem]">
@@ -297,7 +297,7 @@ export default function DoseLanding() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-sm text-[#1a1f16]/60 text-center">Breathwork</p>
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Breathwork</p>
             </div>
             <div className="space-y-2">
               <div className="overflow-hidden rounded-[2rem]">
@@ -309,7 +309,7 @@ export default function DoseLanding() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-sm text-[#1a1f16]/60 text-center">Deep Insights</p>
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Deep Insights</p>
             </div>
             <div className="space-y-2">
               <div className="overflow-hidden rounded-[2rem]">
@@ -321,7 +321,7 @@ export default function DoseLanding() {
                   className="w-full h-auto"
                 />
               </div>
-              <p className="text-sm text-[#1a1f16]/60 text-center">Your Data</p>
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Your Data</p>
             </div>
           </div>
         </div>
