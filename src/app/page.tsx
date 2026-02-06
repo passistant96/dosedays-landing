@@ -271,9 +271,9 @@ export default function DoseLanding() {
                 detail: "Deep insights",
               },
               {
-                title: "Guided Breathwork",
-                description: "Built-in breathing exercises for before, during, or after your experience.",
-                detail: "Box, relaxing, energizing",
+                title: "Learn As You Go",
+                description: "Curated articles on protocols, science, and integration. Knowledge when you need it.",
+                detail: "Built-in library",
               },
               {
                 title: "100% Private",
