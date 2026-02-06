@@ -254,8 +254,8 @@ export default function DoseLanding() {
           <div className="space-y-1">
             {[
               {
-                title: "Log in Seconds",
-                description: "One tap to record your dose, mood, and notes. No friction, no complexity.",
+                title: "One-Tap Logging",
+                description: "Record your dose, mood, and notes in seconds. No friction, no complexity.",
                 detail: "Quick capture",
               },
               {
@@ -269,9 +269,9 @@ export default function DoseLanding() {
                 detail: "Deep insights",
               },
               {
-                title: "Learn As You Go",
-                description: "Curated articles on protocols, science, and integration. Knowledge when you need it.",
-                detail: "Built-in library",
+                title: "Built-in Knowledge",
+                description: "Curated articles on protocols, science, and integration. Learn at your own pace.",
+                detail: "Library included",
               },
               {
                 title: "100% Private",
@@ -281,21 +281,18 @@ export default function DoseLanding() {
             ].map((feature, i) => (
               <div
                 key={i}
-                className="group border-b border-white/10 py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-white/5 px-6 -mx-6 transition-colors"
+                className="border-b border-white/10 py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 px-6 -mx-6"
               >
                 <div className="flex-1">
-                  <h3 className="text-2xl mb-2 group-hover:translate-x-2 transition-transform">
+                  <h3 className="text-2xl mb-2">
                     {feature.title}
                   </h3>
                   <p className="text-[#A4B494]">{feature.description}</p>
                 </div>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center">
                   <span className="text-sm text-[#8B9E82] px-4 py-2 rounded-full bg-[#8B9E82]/10">
                     {feature.detail}
                   </span>
-                  <svg className="w-5 h-5 text-[#A4B494]/50 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
                 </div>
               </div>
             ))}
