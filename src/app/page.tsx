@@ -3,9 +3,39 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { supabase } from "@/lib/supabase";
 
 export default function DoseLanding() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    
+    setStatus("loading");
+    try {
+      const { error } = await supabase
+        .from("email_signups")
+        .insert([{ email }]);
+      
+      if (error) {
+        if (error.code === "23505") {
+          // Duplicate email
+          setStatus("success");
+        } else {
+          throw error;
+        }
+      } else {
+        setStatus("success");
+      }
+      setEmail("");
+    } catch (err) {
+      console.error(err);
+      setStatus("error");
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#1a1f16] text-[#FAF8F5]">
@@ -98,24 +128,39 @@ export default function DoseLanding() {
                 Log doses, reflections, and moods. See patterns emerge over time.
               </p>
 
-              {/* CTA */}
-              <div className="flex flex-col sm:flex-row gap-4 items-start">
-                <a 
-                  href="mailto:info@dosedays.me?subject=Notify%20me%20when%20Dose%20launches"
-                  className="px-8 py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-base font-medium hover:bg-[#A4B494] transition-colors inline-flex items-center gap-2"
-                >
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              {/* CTA - Email Signup */}
+              {status === "success" ? (
+                <div className="flex items-center gap-3 text-[#8B9E82]">
+                  <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
-                  Get Notified
-                </a>
-                <a 
-                  href="#features"
-                  className="px-8 py-4 text-[#FAF8F5] border border-white/20 rounded-full text-base font-medium hover:border-[#8B9E82] transition-colors"
-                >
-                  Learn more
-                </a>
-              </div>
+                  <span className="text-lg">You&apos;re on the list. We&apos;ll email you when we launch.</span>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 items-start">
+                  <div className="relative">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your email"
+                      required
+                      className="px-6 py-4 bg-[#2a2f26] border border-white/10 rounded-full text-base text-[#FAF8F5] placeholder-[#A4B494]/50 focus:outline-none focus:border-[#8B9E82] w-full sm:w-72"
+                    />
+                  </div>
+                  <button 
+                    type="submit"
+                    disabled={status === "loading"}
+                    className="px-8 py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-base font-medium hover:bg-[#A4B494] transition-colors disabled:opacity-50"
+                  >
+                    {status === "loading" ? "..." : "Notify Me"}
+                  </button>
+                </form>
+              )}
+              {status === "error" && (
+                <p className="text-red-400 text-sm mt-2">Something went wrong. Try again?</p>
+              )}
+              <p className="text-sm text-[#A4B494]/60 mt-4">We&apos;ll only email you once when we launch. No spam.</p>
             </div>
 
             {/* Right: Phone Mockup */}
