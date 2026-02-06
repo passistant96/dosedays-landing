@@ -75,7 +75,7 @@ export default function DoseLanding() {
             <div className="hidden md:flex items-center gap-4">
               <a 
                 href="#signup" 
-                className="text-sm px-6 py-2.5 bg-[#8B9E82] text-[#1a1f16] rounded-full hover:bg-[#A4B494] transition-colors font-medium"
+                className="text-sm px-5 py-2 bg-[#8B9E82] text-[#1a1f16] rounded-full hover:bg-[#A4B494] transition-colors font-medium"
               >
                 Get Notified
               </a>
@@ -450,7 +450,7 @@ export default function DoseLanding() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-white/10 py-16 px-6">
+      <footer className="border-t border-white/10 py-10 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
@@ -474,7 +474,7 @@ export default function DoseLanding() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-between pt-8 mt-8 border-t border-white/10 text-sm text-[#A4B494]/60">
+          <div className="flex flex-col md:flex-row items-center justify-between pt-6 mt-6 border-t border-white/10 text-sm text-[#A4B494]/60">
             <p>© 2026 Dose. All rights reserved.</p>
           </div>
         </div>
