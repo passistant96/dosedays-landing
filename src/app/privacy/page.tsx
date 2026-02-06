@@ -71,7 +71,7 @@ export default function Privacy() {
                 <p>
                   If you purchase a premium subscription, the transaction is handled entirely 
                   by Apple through the App Store. We don&apos;t see your payment details. We use 
-                  RevenueCat to manage subscription status — they receive only the information 
+                  RevenueCat to manage subscription status. they receive only the information 
                   necessary to process your subscription, not your personal journal entries.
                 </p>
               </section>
@@ -89,7 +89,7 @@ export default function Privacy() {
                 <h2 className="text-xl font-semibold text-[#FAF8F5] mb-3">International Users (GDPR)</h2>
                 <p>
                   We comply with applicable data protection laws including GDPR. Since we 
-                  don&apos;t collect personal data, most provisions don&apos;t apply — but you have the 
+                  don&apos;t collect personal data, most provisions don&apos;t apply. but you have the 
                   right to request information about your data at any time.
                 </p>
               </section>
@@ -99,7 +99,7 @@ export default function Privacy() {
                 <p>
                   We do not sell personal information. Since we don&apos;t collect personally 
                   identifiable data, CCPA rights to access and delete don&apos;t apply in the 
-                  traditional sense — your data is already entirely in your control on your 
+                  traditional sense. your data is already entirely in your control on your 
                   own device.
                 </p>
               </section>

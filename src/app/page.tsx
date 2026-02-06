@@ -14,8 +14,14 @@ export default function DoseLanding() {
         <div className="max-w-6xl mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="text-2xl font-semibold tracking-tight">
-              Dose.
+            <Link href="/" className="block">
+              <Image
+                src="/logo.png"
+                alt="Dose"
+                width={80}
+                height={32}
+                className="h-8 w-auto"
+              />
             </Link>
 
             {/* Nav Links - Desktop */}
@@ -214,7 +220,7 @@ export default function DoseLanding() {
             ].map((feature, i) => (
               <div
                 key={i}
-                className="group border-b border-white/10 py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-white/5 px-6 -mx-6 transition-colors cursor-pointer"
+                className="group border-b border-white/10 py-8 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-white/5 px-6 -mx-6 transition-colors"
               >
                 <div className="flex-1">
                   <h3 className="text-2xl mb-2 group-hover:translate-x-2 transition-transform">
@@ -249,7 +255,7 @@ export default function DoseLanding() {
             </h2>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-6 max-w-xs sm:max-w-none mx-auto">
             <div className="space-y-2">
               <div className="overflow-hidden rounded-[2rem]">
                 <Image
@@ -318,7 +324,7 @@ export default function DoseLanding() {
             <p className="text-lg text-[#A4B494] leading-relaxed mb-8">
               We don&apos;t have servers. We don&apos;t have accounts. We don&apos;t collect your data. 
               Everything you log stays on your iPhone, encrypted by iOS. When you delete 
-              the app, it&apos;s gone — because we never had it.
+              the app, it&apos;s gone. because we never had it.
             </p>
             <Link href="/privacy" className="text-[#8B9E82] font-medium hover:text-[#A4B494] transition-colors">
               Read our privacy policy →
@@ -338,7 +344,7 @@ export default function DoseLanding() {
               </h2>
               <p className="text-[#1a1f16]/80 mb-6">
                 Dose launched in February 2026. It&apos;s new, it&apos;s evolving, and it&apos;s 
-                shaped by your feedback. We&apos;re building this in public — here&apos;s what&apos;s coming:
+                shaped by your feedback. We&apos;re building this in public. here&apos;s what&apos;s coming:
               </p>
               <ul className="space-y-3 text-[#1a1f16]/80 mb-8">
                 <li className="flex items-center gap-3">
@@ -394,8 +400,14 @@ export default function DoseLanding() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <a href="/" className="text-2xl font-semibold tracking-tight mb-4 block">
-                Dose.
+              <a href="/" className="mb-4 block">
+                <Image
+                  src="/logo.png"
+                  alt="Dose"
+                  width={80}
+                  height={32}
+                  className="h-8 w-auto"
+                />
               </a>
               <p className="text-[#A4B494]/60 text-sm max-w-xs">
                 A mindful companion for tracking your microdosing journey. Built by microdosers.

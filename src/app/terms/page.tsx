@@ -35,7 +35,7 @@ export default function Terms() {
               <p className="font-medium text-amber-200">
                 <strong>Important:</strong> Dose is not a medical device and does not provide 
                 medical advice, diagnosis, or treatment recommendations. It&apos;s a personal 
-                journal — nothing more. Always consult a healthcare professional before 
+                journal. nothing more. Always consult a healthcare professional before 
                 making decisions about your health.
               </p>
             </div>
@@ -64,7 +64,7 @@ export default function Terms() {
               <p>
                 We provide the app &quot;as is&quot; and make no warranties about its accuracy, 
                 reliability, or suitability for any particular purpose. We&apos;re building 
-                this in public and improving based on feedback — things may change.
+                this in public and improving based on feedback. things may change.
               </p>
             </section>
 
