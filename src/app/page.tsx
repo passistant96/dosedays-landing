@@ -110,11 +110,11 @@ export default function DoseLanding() {
             </div>
           </div>
 
-          {/* Hero visual - App screenshots */}
+          {/* Hero visual - App screenshot */}
           <div className="mt-20 relative">
-            <div className="flex justify-center gap-4 md:gap-8">
+            <div className="flex justify-center">
               {/* Main screenshot */}
-              <div className="relative w-[280px] md:w-[320px] flex-shrink-0">
+              <div className="relative w-[280px] md:w-[320px]">
                 <Image
                   src="/screenshots/home.png"
                   alt="Dose app home screen"
@@ -122,16 +122,6 @@ export default function DoseLanding() {
                   height={693}
                   className="rounded-[2.5rem] shadow-2xl shadow-black/50"
                   priority
-                />
-              </div>
-              {/* Secondary screenshot - hidden on mobile */}
-              <div className="hidden md:block relative w-[280px] md:w-[320px] flex-shrink-0 mt-12">
-                <Image
-                  src="/screenshots/insights.png"
-                  alt="Dose app insights"
-                  width={320}
-                  height={693}
-                  className="rounded-[2.5rem] shadow-2xl shadow-black/50"
                 />
               </div>
             </div>
@@ -262,15 +252,15 @@ export default function DoseLanding() {
       </section>
 
       {/* Screenshots Grid */}
-      <section className="py-32 px-6 bg-[#2a2f26]">
+      <section className="py-32 px-6 bg-[#8B9E82] text-[#1a1f16]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm tracking-[0.2em] uppercase text-[#8B9E82] mb-6">
+            <p className="text-sm tracking-[0.2em] uppercase text-[#1a1f16]/60 mb-6">
               The App
             </p>
             <h2 className="text-4xl md:text-5xl">
               Every screen,{" "}
-              <span className="italic text-[#A4B494]">thoughtfully crafted</span>
+              <span className="italic text-[#1a1f16]/70">thoughtfully crafted</span>
             </h2>
           </div>
           
@@ -283,7 +273,7 @@ export default function DoseLanding() {
                 height={607}
                 className="rounded-2xl shadow-lg"
               />
-              <p className="text-sm text-[#A4B494]/60 text-center">Log Dose</p>
+              <p className="text-sm text-[#1a1f16]/60 text-center">Log Dose</p>
             </div>
             <div className="space-y-2">
               <Image
@@ -293,7 +283,7 @@ export default function DoseLanding() {
                 height={607}
                 className="rounded-2xl shadow-lg"
               />
-              <p className="text-sm text-[#A4B494]/60 text-center">Breathwork</p>
+              <p className="text-sm text-[#1a1f16]/60 text-center">Breathwork</p>
             </div>
             <div className="space-y-2">
               <Image
@@ -303,7 +293,7 @@ export default function DoseLanding() {
                 height={607}
                 className="rounded-2xl shadow-lg"
               />
-              <p className="text-sm text-[#A4B494]/60 text-center">Deep Insights</p>
+              <p className="text-sm text-[#1a1f16]/60 text-center">Deep Insights</p>
             </div>
             <div className="space-y-2">
               <Image
@@ -313,7 +303,7 @@ export default function DoseLanding() {
                 height={607}
                 className="rounded-2xl shadow-lg"
               />
-              <p className="text-sm text-[#A4B494]/60 text-center">Settings</p>
+              <p className="text-sm text-[#1a1f16]/60 text-center">Your Data</p>
             </div>
           </div>
         </div>
@@ -345,37 +335,37 @@ export default function DoseLanding() {
       </section>
 
       {/* This is v1.0 */}
-      <section className="py-32 px-6 bg-[#2a2f26]">
+      <section className="py-32 px-6 bg-[#8B9E82] text-[#1a1f16]">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl mx-auto">
-            <div className="border border-white/10 rounded-3xl p-8 md:p-12">
-              <div className="text-sm font-medium text-[#8B9E82] mb-3">This is v1.0</div>
+            <div className="border border-[#1a1f16]/20 rounded-3xl p-8 md:p-12 bg-[#1a1f16]/5">
+              <div className="text-sm font-medium text-[#1a1f16]/60 mb-3">This is v1.0</div>
               <h2 className="text-2xl md:text-3xl mb-4">
                 We&apos;re just getting started
               </h2>
-              <p className="text-[#A4B494] mb-6">
+              <p className="text-[#1a1f16]/80 mb-6">
                 Dose launched in February 2026. It&apos;s new, it&apos;s evolving, and it&apos;s 
                 shaped by your feedback. We&apos;re building this in public — here&apos;s what&apos;s coming:
               </p>
-              <ul className="space-y-3 text-[#A4B494] mb-8">
+              <ul className="space-y-3 text-[#1a1f16]/80 mb-8">
                 <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-[#8B9E82] rounded-full"></span>
+                  <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
                   Health data correlations (sleep, HRV)
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-[#8B9E82] rounded-full"></span>
+                  <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
                   Custom protocol builder
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-[#8B9E82] rounded-full"></span>
+                  <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
                   Data export
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-1.5 h-1.5 bg-[#8B9E82] rounded-full"></span>
+                  <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
                   Whatever you tell us matters most
                 </li>
               </ul>
-              <a href="mailto:info@dosedays.me" className="text-[#8B9E82] font-medium hover:text-[#A4B494] transition-colors">
+              <a href="mailto:info@dosedays.me" className="text-[#1a1f16] font-medium hover:text-[#1a1f16]/70 transition-colors">
                 Send us feedback →
               </a>
             </div>
