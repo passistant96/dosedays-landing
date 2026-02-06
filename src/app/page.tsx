@@ -110,24 +110,9 @@ export default function DoseLanding() {
             </div>
           </div>
 
-          {/* Hero visual - App screenshot */}
-          <div className="mt-20 relative">
-            <div className="flex justify-center">
-              {/* Main screenshot */}
-              <div className="relative w-[280px] md:w-[320px]">
-                <Image
-                  src="/screenshots/home.png"
-                  alt="Dose app home screen"
-                  width={320}
-                  height={693}
-                  className="rounded-[2.5rem] shadow-2xl shadow-black/50"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* Floating stats */}
-            <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 flex gap-8 bg-[#2a2f26] px-8 py-4 rounded-full shadow-lg border border-white/10">
+          {/* Stats bar */}
+          <div className="mt-16 flex justify-center">
+            <div className="flex gap-8 bg-[#2a2f26] px-8 py-4 rounded-full shadow-lg border border-white/10">
               <div className="text-center">
                 <div className="text-2xl font-medium text-[#8B9E82]">100%</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Private</div>
@@ -266,43 +251,51 @@ export default function DoseLanding() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             <div className="space-y-2">
-              <Image
-                src="/screenshots/log-dose.png"
-                alt="Log dose screen"
-                width={280}
-                height={607}
-                className="rounded-2xl shadow-lg"
-              />
+              <div className="overflow-hidden rounded-[2rem]">
+                <Image
+                  src="/screenshots/log-dose.png"
+                  alt="Log dose screen"
+                  width={280}
+                  height={607}
+                  className="w-full h-auto"
+                />
+              </div>
               <p className="text-sm text-[#1a1f16]/60 text-center">Log Dose</p>
             </div>
             <div className="space-y-2">
-              <Image
-                src="/screenshots/breathwork.png"
-                alt="Breathwork screen"
-                width={280}
-                height={607}
-                className="rounded-2xl shadow-lg"
-              />
+              <div className="overflow-hidden rounded-[2rem]">
+                <Image
+                  src="/screenshots/breathwork.png"
+                  alt="Breathwork screen"
+                  width={280}
+                  height={607}
+                  className="w-full h-auto"
+                />
+              </div>
               <p className="text-sm text-[#1a1f16]/60 text-center">Breathwork</p>
             </div>
             <div className="space-y-2">
-              <Image
-                src="/screenshots/insights.png"
-                alt="Insights screen"
-                width={280}
-                height={607}
-                className="rounded-2xl shadow-lg"
-              />
+              <div className="overflow-hidden rounded-[2rem]">
+                <Image
+                  src="/screenshots/insights.png"
+                  alt="Insights screen"
+                  width={280}
+                  height={607}
+                  className="w-full h-auto"
+                />
+              </div>
               <p className="text-sm text-[#1a1f16]/60 text-center">Deep Insights</p>
             </div>
             <div className="space-y-2">
-              <Image
-                src="/screenshots/settings.png"
-                alt="Settings screen"
-                width={280}
-                height={607}
-                className="rounded-2xl shadow-lg"
-              />
+              <div className="overflow-hidden rounded-[2rem]">
+                <Image
+                  src="/screenshots/settings.png"
+                  alt="Settings screen"
+                  width={280}
+                  height={607}
+                  className="w-full h-auto"
+                />
+              </div>
               <p className="text-sm text-[#1a1f16]/60 text-center">Your Data</p>
             </div>
           </div>
