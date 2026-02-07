@@ -168,7 +168,7 @@ export default function DoseLanding() {
             {/* Right: Phone Mockup */}
             <div className="hidden md:flex justify-center">
               <div className="relative">
-                <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-black/30 border border-white/10">
+                <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-black/30">
                   <Image
                     src="/screenshots/home.png"
                     alt="Dose app home screen"
