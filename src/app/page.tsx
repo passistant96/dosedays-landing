@@ -194,6 +194,11 @@ export default function DoseLanding() {
                 <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">v1.0</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Launch</div>
               </div>
+              <div className="w-px bg-white/10" />
+              <div className="text-center">
+                <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">Open</div>
+                <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Roadmap</div>
+              </div>
             </div>
           </div>
         </div>
