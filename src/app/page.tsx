@@ -417,11 +417,11 @@ export default function DoseLanding() {
               <ul className="space-y-3 text-[#1a1f16]/80 mb-8">
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
-                  Health data correlations (sleep, HRV)
+                  Apple Health integration (sleep, HRV correlations)
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
-                  Data export
+                  Community insights and anonymous benchmarks
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
