@@ -196,7 +196,7 @@ export default function DoseLanding() {
               </div>
               <div className="w-px bg-white/10 mx-4 md:mx-6" />
               <div className="text-center min-w-[72px] md:min-w-[80px]">
-                <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">→</div>
+                <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">Live</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Roadmap</div>
               </div>
             </div>
