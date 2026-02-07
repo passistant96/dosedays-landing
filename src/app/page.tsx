@@ -444,7 +444,7 @@ export default function DoseLanding() {
             <span className="italic text-[#A4B494]">your rhythm?</span>
           </h2>
           <p className="text-xl text-[#A4B494] mb-12 max-w-2xl mx-auto">
-            Be the first to know when Dose launches. Free to use, premium features when you&apos;re ready.
+            Be the first to know when Dose launches. Free to start, with Dose Pro for the complete toolkit — including all future features and updates.
           </p>
           <a 
             href="mailto:info@dosedays.me?subject=Notify%20me%20when%20Dose%20launches"
