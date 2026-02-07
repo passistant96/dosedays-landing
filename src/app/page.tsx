@@ -184,18 +184,18 @@ export default function DoseLanding() {
 
           {/* Stats bar */}
           <div className="mt-16 flex justify-center">
-            <div className="flex gap-6 md:gap-8 bg-[#2a2f26] px-6 md:px-8 py-4 rounded-full shadow-lg border border-white/10">
-              <div className="text-center">
+            <div className="flex bg-[#2a2f26] px-6 md:px-8 py-4 rounded-full shadow-lg border border-white/10">
+              <div className="text-center min-w-[72px] md:min-w-[80px]">
                 <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">100%</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Private</div>
               </div>
-              <div className="w-px bg-white/10" />
-              <div className="text-center">
+              <div className="w-px bg-white/10 mx-4 md:mx-6" />
+              <div className="text-center min-w-[72px] md:min-w-[80px]">
                 <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">v1.0</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Launch</div>
               </div>
-              <div className="w-px bg-white/10" />
-              <div className="text-center">
+              <div className="w-px bg-white/10 mx-4 md:mx-6" />
+              <div className="text-center min-w-[72px] md:min-w-[80px]">
                 <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">Open</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Roadmap</div>
               </div>
