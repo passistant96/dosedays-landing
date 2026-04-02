@@ -411,7 +411,7 @@ export default function DoseLanding() {
                 We&apos;re just getting started
               </h2>
               <p className="text-[#1a1f16]/80 mb-6">
-                Dose launched in February 2026. It&apos;s new, it&apos;s evolving, and it&apos;s 
+                Dose is coming soon. It&apos;s new, it&apos;s evolving, and it&apos;s 
                 shaped by your feedback. We&apos;re building this in public. here&apos;s what&apos;s coming:
               </p>
               <ul className="space-y-3 text-[#1a1f16]/80 mb-8">
