@@ -120,18 +120,14 @@ export default function DoseLanding() {
 
             {/* Right: Phone Mockup */}
             <div className="hidden md:flex justify-center">
-              <div className="relative">
-                <div className="overflow-hidden rounded-[2.5rem] shadow-2xl shadow-black/30">
-                  <Image
-                    src="/screenshots/home.png"
-                    alt="Dose app home screen"
-                    width={280}
-                    height={607}
-                    className="w-[280px] h-auto"
-                    priority
-                  />
-                </div>
-              </div>
+              <Image
+                src="/screenshots/home.png"
+                alt="Dose app home screen"
+                width={300}
+                height={614}
+                className="w-[300px] h-auto drop-shadow-2xl"
+                priority
+              />
             </div>
           </div>
 
@@ -278,52 +274,44 @@ export default function DoseLanding() {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-6 max-w-xs sm:max-w-none mx-auto">
             <div className="space-y-2">
-              <div className="overflow-hidden rounded-[2rem]">
-                <Image
-                  src="/screenshots/log-dose.png"
-                  alt="Log dose screen"
-                  width={280}
-                  height={607}
-                  className="w-full h-auto"
-                />
-              </div>
-              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Log Dose</p>
+              <Image
+                src="/screenshots/calendar.png"
+                alt="Journey calendar screen"
+                width={280}
+                height={573}
+                className="w-full h-auto drop-shadow-xl"
+              />
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Calendar</p>
             </div>
             <div className="space-y-2">
-              <div className="overflow-hidden rounded-[2rem]">
-                <Image
-                  src="/screenshots/breathwork.png"
-                  alt="Breathwork screen"
-                  width={280}
-                  height={607}
-                  className="w-full h-auto"
-                />
-              </div>
-              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Breathwork</p>
+              <Image
+                src="/screenshots/intention.png"
+                alt="Set intention screen"
+                width={280}
+                height={573}
+                className="w-full h-auto drop-shadow-xl"
+              />
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Set Intention</p>
             </div>
             <div className="space-y-2">
-              <div className="overflow-hidden rounded-[2rem]">
-                <Image
-                  src="/screenshots/insights.png"
-                  alt="Insights screen"
-                  width={280}
-                  height={607}
-                  className="w-full h-auto"
-                />
-              </div>
-              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Deep Insights</p>
+              <Image
+                src="/screenshots/protocol.png"
+                alt="Custom protocol screen"
+                width={280}
+                height={573}
+                className="w-full h-auto drop-shadow-xl"
+              />
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Custom Protocol</p>
             </div>
             <div className="space-y-2">
-              <div className="overflow-hidden rounded-[2rem]">
-                <Image
-                  src="/screenshots/journal.png"
-                  alt="Journal screen"
-                  width={280}
-                  height={607}
-                  className="w-full h-auto"
-                />
-              </div>
-              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Journal</p>
+              <Image
+                src="/screenshots/settings.png"
+                alt="Settings screen"
+                width={280}
+                height={573}
+                className="w-full h-auto drop-shadow-xl"
+              />
+              <p className="hidden md:block text-sm text-[#1a1f16]/60 text-center">Private</p>
             </div>
           </div>
         </div>
