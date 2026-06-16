@@ -144,7 +144,7 @@ export default function DoseLanding() {
               </div>
               <div className="w-px bg-white/10 mx-4 md:mx-6" />
               <div className="text-center min-w-[72px] md:min-w-[80px]">
-                <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">v1.1</div>
+                <div className="text-xl md:text-2xl font-medium text-[#8B9E82]">v1.3</div>
                 <div className="text-xs text-[#A4B494]/60 uppercase tracking-wider">Latest</div>
               </div>
               <div className="w-px bg-white/10 mx-4 md:mx-6" />
@@ -232,13 +232,13 @@ export default function DoseLanding() {
                 detail: "Hands-free",
               },
               {
-                title: "Built-in Knowledge",
-                description: "Curated articles on protocols, science, and integration. Learn at your own pace.",
-                detail: "Library included",
+                title: "Journey Calendar",
+                description: "See your whole cycle on one calendar. Your rhythm and your moods, dose days and integration days, all in one view.",
+                detail: "At a glance",
               },
               {
-                title: "100% Private",
-                description: "All data stays on your device. No accounts, no cloud, no tracking.",
+                title: "Private by Design",
+                description: "No accounts, no servers, no tracking. Your data stays on your device, with optional backup to your own iCloud.",
                 detail: "Local-first",
               },
             ].map((feature, i) => (
@@ -339,13 +339,13 @@ export default function DoseLanding() {
               </svg>
             </div>
             <h2 className="text-4xl md:text-5xl mb-6">
-              Your data never leaves{" "}
-              <span className="italic text-[#A4B494]">your device</span>
+              Your data stays{" "}
+              <span className="italic text-[#A4B494]">yours</span>
             </h2>
             <p className="text-lg text-[#A4B494] leading-relaxed mb-8">
-              We don&apos;t have servers. We don&apos;t have accounts. We don&apos;t collect your data. 
-              Everything you log stays on your iPhone, encrypted by iOS. When you delete 
-              the app, it&apos;s gone. because we never had it.
+              We have no servers and no accounts, and we never collect your data.
+              Everything you log lives on your iPhone, encrypted by iOS. If you turn on
+              backup, it goes only to your own private iCloud, never to us.
             </p>
             <Link href="/privacy" className="text-[#8B9E82] font-medium hover:text-[#A4B494] transition-colors">
               Read our privacy policy →
@@ -369,11 +369,11 @@ export default function DoseLanding() {
               <ul className="space-y-3 text-[#1a1f16]/80 mb-8">
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
-                  Apple Health integration (sleep, HRV correlations)
+                  Home screen widgets
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
-                  Community insights and anonymous benchmarks
+                  Deeper insight into what works for you
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-1.5 h-1.5 bg-[#1a1f16] rounded-full"></span>
