@@ -174,19 +174,14 @@ export default function DoseLanding() {
                 across your entire rhythm and see what actually works for you.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                { number: "01", title: "Track", desc: "Log doses in seconds" },
-                { number: "02", title: "Reflect", desc: "Capture thoughts daily" },
-                { number: "03", title: "Understand", desc: "See patterns emerge" },
-                { number: "04", title: "Own", desc: "Your data stays yours" },
-              ].map((item) => (
-                <div key={item.number} className="border border-[#1a1f16]/20 rounded-xl p-6 bg-[#1a1f16]/5">
-                  <span className="text-sm text-[#1a1f16]/50 font-mono">{item.number}</span>
-                  <h3 className="text-xl mt-4 mb-2 font-medium">{item.title}</h3>
-                  <p className="text-sm text-[#1a1f16]/70">{item.desc}</p>
-                </div>
-              ))}
+            <div className="flex justify-center">
+              <Image
+                src="/screenshots/insights-deep.png"
+                alt="Dose deep insights screen"
+                width={460}
+                height={460}
+                className="w-full max-w-[460px] h-auto drop-shadow-2xl"
+              />
             </div>
           </div>
         </div>
