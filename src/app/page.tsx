@@ -154,47 +154,40 @@ export default function DoseLanding() {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-32 px-6 bg-[#8B9E82] text-[#1a1f16] overflow-hidden">
-        <div className="max-w-6xl mx-auto relative">
-          {/* Large device, bleeding off the right, behind the text (desktop) */}
-          <div className="hidden md:block absolute -right-24 top-1/2 -translate-y-1/2 w-[62%] z-0 pointer-events-none">
-            <Image
-              src="/screenshots/insights-deep.png"
-              alt="Dose deep insights screen"
-              width={820}
-              height={820}
-              className="w-full h-auto drop-shadow-2xl"
-            />
-          </div>
-
-          {/* Text, layered in front */}
-          <div className="relative z-10 max-w-md">
-            <p className="text-sm tracking-[0.2em] uppercase text-[#1a1f16]/60 mb-6">
-              Why Dose
-            </p>
-            <h2 className="text-4xl md:text-5xl leading-tight mb-8">
-              Other trackers miss{" "}
-              <span className="italic text-[#1a1f16]/70">the full picture</span>
-            </h2>
-            <p className="text-lg text-[#1a1f16]/80 leading-relaxed mb-6">
-              Microdosing isn&apos;t just about dose days. It&apos;s about the full cycle:
-              the dose, the integration, and the return to baseline.
-            </p>
-            <p className="text-lg text-[#1a1f16]/80 leading-relaxed">
-              Dose understands that integration days matter. Track how you feel
-              across your entire rhythm and see what actually works for you.
-            </p>
-          </div>
-
-          {/* Device stacked below text on mobile */}
-          <div className="md:hidden mt-12 flex justify-center">
-            <Image
-              src="/screenshots/insights-deep.png"
-              alt="Dose deep insights screen"
-              width={440}
-              height={440}
-              className="w-full max-w-[400px] h-auto drop-shadow-2xl"
-            />
+      <section className="py-32 px-6 bg-[#8B9E82] text-[#1a1f16]">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+              <p className="text-sm tracking-[0.2em] uppercase text-[#1a1f16]/60 mb-6">
+                Why Dose
+              </p>
+              <h2 className="text-4xl md:text-5xl leading-tight mb-8">
+                Other trackers miss{" "}
+                <span className="italic text-[#1a1f16]/70">the full picture</span>
+              </h2>
+              <p className="text-lg text-[#1a1f16]/80 leading-relaxed mb-6">
+                Microdosing isn&apos;t just about dose days. It&apos;s about the full cycle:
+                the dose, the integration, and the return to baseline.
+              </p>
+              <p className="text-lg text-[#1a1f16]/80 leading-relaxed">
+                Dose understands that integration days matter. Track how you feel
+                across your entire rhythm and see what actually works for you.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                { number: "01", title: "Track", desc: "Log doses in seconds" },
+                { number: "02", title: "Reflect", desc: "Capture thoughts daily" },
+                { number: "03", title: "Understand", desc: "See patterns emerge" },
+                { number: "04", title: "Own", desc: "Your data stays yours" },
+              ].map((item) => (
+                <div key={item.number} className="border border-[#1a1f16]/20 rounded-xl p-6 bg-[#1a1f16]/5">
+                  <span className="text-sm text-[#1a1f16]/50 font-medium">{item.number}</span>
+                  <h3 className="text-xl mt-4 mb-2 font-medium">{item.title}</h3>
+                  <p className="text-sm text-[#1a1f16]/70">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
