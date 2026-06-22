@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Learn: Microdosing Protocols, Schedules & Tracking',
     description:
       'Clear, practical guides to microdosing, from the basics to the science.',
-    url: 'https://dosedays.me/learn',
+    url: 'https://www.dosedays.me/learn',
     type: 'website',
   },
 }
@@ -39,19 +39,24 @@ function formatDate(iso: string) {
   })
 }
 
-function ArticleRow({ a }: { a: ArticleMeta }) {
+// Articles are bordered, hover-lit cards so they read unmistakably as the
+// clickable elements, distinct from the static masthead and the section labels.
+function ArticleCard({ a }: { a: ArticleMeta }) {
   return (
-    <Link href={`/learn/${a.slug}`} className="group block py-8 transition-colors">
-      <div className="flex items-center gap-4 text-xs text-[#A4B494]/60 mb-3">
+    <Link
+      href={`/learn/${a.slug}`}
+      className="group block rounded-2xl border border-white/10 bg-white/[0.015] px-6 py-6 transition-colors hover:border-[#8B9E82]/40 hover:bg-white/[0.035]"
+    >
+      <div className="flex items-center gap-3 text-xs text-[#A4B494]/55 mb-3">
         <span>{formatDate(a.date)}</span>
         {a.readingTime ? <span>· {a.readingTime}</span> : null}
       </div>
-      <h3 className="text-2xl font-medium mb-3 group-hover:text-[#A4B494] transition-colors">
+      <h3 className="text-xl md:text-2xl font-medium leading-snug mb-3 group-hover:text-[#A4B494] transition-colors">
         {a.title}
       </h3>
       <p className="text-[#A4B494] leading-relaxed font-light">{a.description}</p>
-      <span className="inline-block mt-4 text-sm text-[#8B9E82] group-hover:text-[#A4B494] transition-colors">
-        Read →
+      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-[#8B9E82] group-hover:gap-2.5 transition-all">
+        Read guide <span aria-hidden>→</span>
       </span>
     </Link>
   )
@@ -80,12 +85,14 @@ export default function LearnIndex() {
         </div>
       </nav>
 
-      <header className="max-w-3xl mx-auto px-6 pt-20 pb-8">
-        <p className="text-sm uppercase tracking-[0.18em] text-[#8B9E82] mb-5">Learn</p>
-        <h1 className="text-4xl md:text-5xl font-normal leading-[1.1] tracking-tight mb-6">
+      {/* Masthead: the page title, clearly a heading and not interactive. The
+          bottom border closes it off so it reads as distinct from the list. */}
+      <header className="max-w-3xl mx-auto px-6 pt-24 pb-14 border-b border-white/10">
+        <p className="text-xs uppercase tracking-[0.2em] text-[#8B9E82] mb-5">Dose Days · Learn</p>
+        <h1 className="text-5xl md:text-6xl font-normal leading-[1.04] tracking-tight mb-6">
           Microdosing, <span className="italic text-[#A4B494]">explained</span>
         </h1>
-        <p className="text-lg text-[#A4B494] leading-relaxed max-w-xl font-light">
+        <p className="text-lg md:text-xl text-[#A4B494] leading-relaxed max-w-xl font-light">
           Clear, practical guides that take you from the basics to the science. Educational only,
           never medical advice.
         </p>
@@ -93,14 +100,17 @@ export default function LearnIndex() {
 
       <main className="max-w-3xl mx-auto px-6 pb-24">
         {sections.map((s) => (
-          <section key={s.tier} className="mt-16 first:mt-6">
-            <div className="mb-2">
-              <h2 className="text-sm uppercase tracking-[0.16em] text-[#8B9E82]">{s.label}</h2>
-              {s.blurb ? <p className="text-sm text-[#A4B494]/60 mt-2">{s.blurb}</p> : null}
+          <section key={s.tier} className="mt-16">
+            <div className="mb-6">
+              <div className="flex items-baseline gap-3">
+                <h2 className="text-sm uppercase tracking-[0.16em] text-[#8B9E82]">{s.label}</h2>
+                <span className="text-xs text-[#A4B494]/40 tabular-nums">{s.items.length}</span>
+              </div>
+              {s.blurb ? <p className="mt-2 text-sm text-[#A4B494]/55">{s.blurb}</p> : null}
             </div>
-            <div className="divide-y divide-white/10 border-t border-white/10">
+            <div className="grid gap-3">
               {s.items.map((a) => (
-                <ArticleRow key={a.slug} a={a} />
+                <ArticleCard key={a.slug} a={a} />
               ))}
             </div>
           </section>
