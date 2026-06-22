@@ -36,6 +36,9 @@ export default function DoseLanding() {
               <a href="#features" className="text-sm text-[#A4B494] hover:text-[#FAF8F5] transition-colors">
                 Features
               </a>
+              <Link href="/learn" className="text-sm text-[#A4B494] hover:text-[#FAF8F5] transition-colors">
+                Learn
+              </Link>
               <a href="#privacy" className="text-sm text-[#A4B494] hover:text-[#FAF8F5] transition-colors">
                 Privacy
               </a>
@@ -47,7 +50,7 @@ export default function DoseLanding() {
             {/* CTA */}
             <div className="hidden md:flex items-center gap-4">
               <a
-                href="https://apps.apple.com/us/app/dose-wellness-tracker/id6758736481"
+                href="https://apps.apple.com/app/id6758736481"
                 className="text-sm px-5 py-2 bg-[#8B9E82] text-[#1a1f16] rounded-full hover:bg-[#A4B494] transition-colors font-medium"
               >
                 Download
@@ -107,7 +110,7 @@ export default function DoseLanding() {
 
               {/* CTA - App Store Download */}
               <a
-                href="https://apps.apple.com/us/app/dose-wellness-tracker/id6758736481"
+                href="https://apps.apple.com/app/id6758736481"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-lg font-medium hover:bg-[#A4B494] transition-colors"
               >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
@@ -352,7 +355,7 @@ export default function DoseLanding() {
                 We&apos;re just getting started
               </h2>
               <p className="text-[#1a1f16]/80 mb-6">
-                Dose is live and evolving. Shaped by real usage and your feedback. Here&apos;s what&apos;s coming:
+                Dose Days is live and evolving. Shaped by real usage and your feedback. Here&apos;s what&apos;s coming:
               </p>
               <ul className="space-y-3 text-[#1a1f16]/80 mb-8">
                 <li className="flex items-center gap-3">
@@ -387,7 +390,7 @@ export default function DoseLanding() {
             Free to start, with Dose Pro for the complete toolkit. Including all future features and updates.
           </p>
           <a
-            href="https://apps.apple.com/us/app/dose-wellness-tracker/id6758736481"
+            href="https://apps.apple.com/app/id6758736481"
             className="inline-flex items-center gap-3 px-10 py-5 bg-[#8B9E82] text-[#1a1f16] rounded-full text-lg font-medium hover:bg-[#A4B494] transition-colors"
           >
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
@@ -407,7 +410,7 @@ export default function DoseLanding() {
               <a href="/" className="mb-4 block">
                 <Image
                   src="/logo.svg"
-                  alt="Dose"
+                  alt="Dose Days"
                   width={80}
                   height={32}
                   className="h-8 w-auto"
@@ -418,6 +421,7 @@ export default function DoseLanding() {
               </p>
             </div>
             <div className="flex gap-8 text-sm">
+              <Link href="/learn" className="text-[#A4B494]/60 hover:text-[#FAF8F5] transition-colors">Learn</Link>
               <Link href="/privacy" className="text-[#A4B494]/60 hover:text-[#FAF8F5] transition-colors">Privacy</Link>
               <Link href="/terms" className="text-[#A4B494]/60 hover:text-[#FAF8F5] transition-colors">Terms</Link>
               <a href="mailto:info@dosedays.me" className="text-[#A4B494]/60 hover:text-[#FAF8F5] transition-colors">Contact</a>
@@ -425,7 +429,7 @@ export default function DoseLanding() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center justify-between pt-6 mt-6 border-t border-white/10 text-sm text-[#A4B494]/60">
-            <p>© 2026 Dose. All rights reserved.</p>
+            <p>© 2026 Dose Days. All rights reserved.</p>
           </div>
         </div>
       </footer>

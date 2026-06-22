@@ -1,22 +1,40 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
+const SITE = 'https://dosedays.me'
+const APP_STORE = 'https://apps.apple.com/app/id6758736481'
+
 export const metadata: Metadata = {
-  title: 'Dose - Track Your Microdosing Journey',
-  description: 'The first microdosing companion that understands integration days. Log doses, reflections, and moods. See patterns emerge over time. 100% private, all data stays on your device.',
-  keywords: ['microdosing', 'psilocybin', 'tracker', 'journal', 'microdose app', 'integration days', 'wellness', 'mental health', 'mushroom tracker'],
-  authors: [{ name: 'Dose' }],
-  creator: 'Dose',
-  publisher: 'Dose',
-  metadataBase: new URL('https://dosedays.me'),
-  alternates: {
-    canonical: '/',
+  metadataBase: new URL(SITE),
+  title: {
+    default: 'Dose Days: Microdosing Tracker & Protocol Journal',
+    template: '%s · Dose Days',
   },
+  description:
+    'Dose Days is the microdosing tracker that understands integration days. Log doses, intentions and moods, follow protocols like Fadiman, and watch the patterns emerge across your whole cycle. Free, private, all data on your device.',
+  keywords: [
+    'microdosing tracker',
+    'microdose tracker',
+    'microdosing journal',
+    'Fadiman protocol',
+    'Stamets stack',
+    'integration days',
+    'psilocybin',
+    'mood tracker',
+    'microdosing app',
+    'wellness',
+  ],
+  applicationName: 'Dose Days',
+  authors: [{ name: 'Dose Days' }],
+  creator: 'Dose Days',
+  publisher: 'Dose Days',
+  alternates: { canonical: '/' },
   openGraph: {
-    title: 'Dose - Track Your Microdosing Journey',
-    description: 'The first microdosing companion that understands integration days. Log doses, reflections, and moods. See patterns emerge.',
-    url: 'https://dosedays.me',
-    siteName: 'Dose',
+    title: 'Dose Days: Microdosing Tracker & Protocol Journal',
+    description:
+      'The microdosing tracker that understands integration days. Log doses, intentions and moods. See the patterns emerge across your whole cycle.',
+    url: SITE,
+    siteName: 'Dose Days',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -24,14 +42,14 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Dose - Microdose Tracker App',
+        alt: 'Dose Days, the microdosing tracker and protocol journal',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dose - Track Your Microdosing Journey',
-    description: 'The first microdosing companion that understands integration days.',
+    title: 'Dose Days: Microdosing Tracker & Protocol Journal',
+    description: 'The microdosing tracker that understands integration days.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -51,6 +69,31 @@ export const metadata: Metadata = {
   },
 }
 
+// Site-wide structured data. The SoftwareApplication block makes the listing
+// eligible for app rich results in Google; WebSite gives the brand a known
+// entity. Articles add their own Article/FAQ JSON-LD per page.
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Dose Days',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'iOS',
+    description:
+      'The microdosing tracker that understands integration days. Log doses, intentions and moods, follow protocols like Fadiman, and watch the patterns emerge across your whole cycle.',
+    url: SITE,
+    downloadUrl: APP_STORE,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    publisher: { '@type': 'Organization', name: 'Dose Days', url: SITE },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Dose Days',
+    url: SITE,
+  },
+]
+
 export default function RootLayout({
   children,
 }: {
@@ -58,7 +101,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   )
 }
