@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next'
 import { getAllArticles } from '@/lib/learn'
 
-const SITE = 'https://dosedays.me'
+const SITE = 'https://www.dosedays.me'
 
 export const dynamic = 'force-static'
 

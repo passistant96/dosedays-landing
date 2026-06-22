@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-const SITE = 'https://dosedays.me'
+const SITE = 'https://www.dosedays.me'
 
 export const dynamic = 'force-static'
 

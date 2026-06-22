@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-const SITE = 'https://dosedays.me'
+const SITE = 'https://www.dosedays.me'
 const APP_STORE = 'https://apps.apple.com/app/id6758736481'
 
 export const metadata: Metadata = {
