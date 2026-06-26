@@ -50,7 +50,7 @@ export default function DoseLanding() {
             {/* CTA */}
             <div className="hidden md:flex items-center gap-4">
               <a
-                href="https://apps.apple.com/app/id6758736481"
+                href="https://apps.apple.com/app/apple-store/id6758736481?pt=128512119&ct=Landing%20Page&mt=8"
                 className="text-sm px-5 py-2 bg-[#8B9E82] text-[#1a1f16] rounded-full hover:bg-[#A4B494] transition-colors font-medium"
               >
                 Download
@@ -110,7 +110,7 @@ export default function DoseLanding() {
 
               {/* CTA - App Store Download */}
               <a
-                href="https://apps.apple.com/app/id6758736481"
+                href="https://apps.apple.com/app/apple-store/id6758736481?pt=128512119&ct=Landing%20Page&mt=8"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-[#8B9E82] text-[#1a1f16] rounded-full text-lg font-medium hover:bg-[#A4B494] transition-colors"
               >
                 <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
@@ -390,7 +390,7 @@ export default function DoseLanding() {
             Free to start, with Dose Pro for the complete toolkit. Including all future features and updates.
           </p>
           <a
-            href="https://apps.apple.com/app/id6758736481"
+            href="https://apps.apple.com/app/apple-store/id6758736481?pt=128512119&ct=Landing%20Page&mt=8"
             className="inline-flex items-center gap-3 px-10 py-5 bg-[#8B9E82] text-[#1a1f16] rounded-full text-lg font-medium hover:bg-[#A4B494] transition-colors"
           >
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">

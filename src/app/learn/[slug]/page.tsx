@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { getArticle, getArticleSlugs } from '@/lib/learn'
 
 const SITE = 'https://dosedays.me'
-const APP_STORE = 'https://apps.apple.com/app/id6758736481'
+const APP_STORE = 'https://apps.apple.com/app/apple-store/id6758736481?pt=128512119&ct=Learn%20Hub&mt=8'
 
 type Params = { params: Promise<{ slug: string }> }
 

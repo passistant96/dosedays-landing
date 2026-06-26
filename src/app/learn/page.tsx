@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { getAllArticles, type ArticleMeta } from '@/lib/learn'
 
-const APP_STORE = 'https://apps.apple.com/app/id6758736481'
+const APP_STORE = 'https://apps.apple.com/app/apple-store/id6758736481?pt=128512119&ct=Learn%20Hub&mt=8'
 
 // Section headings for the learning path, keyed by tier (see the Learn Hub
 // Content Architecture roadmap). Any tier with no articles is skipped; anything
